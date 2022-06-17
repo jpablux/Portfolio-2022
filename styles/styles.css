@@ -730,7 +730,7 @@ background-color: #0047FF;
 
 #message{
   height:110px;
-  min-width:300px;
+  min-width:95%;
   border: solid 1px var(--primary-blue-light);
   border-radius: .5rem;
   padding: .2rem;
