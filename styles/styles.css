@@ -23,13 +23,24 @@
 
 /** Light Mode */
 
+.light-mode{
+  width: 100vw;
+  
+}
 
+.logo-dark{
+  display: none;
+}
+
+.logo-light{
+  display: block;
+}
 
 /**Navbar Mobile **/
 
 .mobile-navbar{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,6 +53,10 @@
 
 .mobile-navbar .sun-icon{
     color: var(--primary-blue-light);
+}
+
+.non-clickable{
+  pointer-events: none;
 }
 
 .mobile-navbar .moon-icon{
@@ -281,12 +296,14 @@
 /** Hero **/
 
 .hero-section{
+  width: 100vw;
+  min-height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--background-light);
-  padding-top: 80px;
+  padding-top: 5vh;
 }
 
 .hero-title, .hero-subtitle{
@@ -308,8 +325,8 @@
 }
 
 .hero-image{
-  width: 20rem;
-  height: 20rem;
+  width: 40vw;
+  height: 20vh;
   background-image: url('../assets/img/heroimage.svg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -443,18 +460,19 @@ background-color: #0047FF;
   margin: auto;
   vertical-align: middle;
   width: 300px;
-  height: 500px;
+  height: fit-content;
   display: none;
   row-gap: .5rem;
   flex-direction: column;
   justify-content:flex-start;
   align-items: center;
-  padding: 3rem;
+  padding: 2rem;
   background-color: var(--background-light);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 2rem;
-  z-index: 99;
+  z-index: 3;
   transition: all ease-in .5s;
+  
 }
 
 .card-clicked-close{
@@ -472,16 +490,19 @@ background-color: #0047FF;
 
 .card-clicked-title{
   color: var(--gray-text-light);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
+  padding: .5rem 0;
 }
 
 .card-clicked-text{
   color: var(--gray-text-light);
-  font-size: 12px;
-  line-height: 20px;
-  text-align: left;
+  font-size: 16px;
+  line-height: 32px;
+  text-justify: distribute;
+  word-break: keep-all;
+  hyphens: none;
 }
 
 .card-clicked-button{
@@ -497,12 +518,17 @@ background-color: #0047FF;
   vertical-align:middle;
 }
 
+.lets-talk-button{
+  background-color: var(--background-light);
+  padding-top: 1rem;
+}
+
 .center{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 1rem auto;
+  margin: 0 auto;
   border-radius: .5rem;
   min-width:300px;
 }
@@ -514,6 +540,7 @@ background-color: #0047FF;
 /** Proyectos **/
 
 .proyectos{
+  background-color: var(--background-light);
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -524,8 +551,8 @@ background-color: #0047FF;
 
 .swiper {
   margin-top: 3.5rem;
-  width: 260px;
-  height: 350px;
+  width: 200px;
+  height: 300px;
 }
 
 .swiper-slide {
@@ -592,6 +619,10 @@ background-color: #0047FF;
 .hero-title-2{
   padding-top: 1.5rem;
   text-align: center;
+}
+
+.skills{
+  background-color: var(--background-light);
 }
 
 .skill{
@@ -661,7 +692,8 @@ background-color: #0047FF;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding-top: 1rem;
+  background-color: var(--background-light);
 }
 
 .contact-form label{
