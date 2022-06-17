@@ -327,8 +327,8 @@
 }
 
 .hero-image{
-  width: 40vw;
-  height: 20vh;
+  min-width: 12rem;
+  min-height: 12rem;
   background-image: url('../assets/img/heorimagedark.svg');
   background-size: cover;
   background-repeat: no-repeat;
