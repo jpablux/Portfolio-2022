@@ -187,7 +187,7 @@
 
   .mobile-menu-slider.is-active{
     position: fixed;
-    padding:10rem 0;
+    padding:5rem 0;
     display: flex;
     opacity: 100;
     transition: .8s all;
